@@ -1,0 +1,305 @@
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background-color: rgb(65, 65, 65);
+        color: white;
+    }
+    
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    body.dark-mode {
+        background-color: #121212;
+        color: #f0f0f0;
+    }
+    
+    .dark-mode header,
+    .dark-mode section,
+    .dark-mode .container {
+        background-color: #ffffff;
+        color: #ffffff;
+    }
+    
+    button#darkModeToggle {
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    body.dark-mode button#darkModeToggle {
+        background-color: #ddd;
+        color: #000;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        position: inherit;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    nav h2 {
+        font-size: 50px;
+        color: #00ddff;
+        margin-left: 30px;
+    }
+    
+    nav h2 span {
+        font-size: 60px;
+        color: #ff0000;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: cyan;
+        padding: 10px;
+        position: relative;
+        font-size: 25px;
+    }
+    
+    nav ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 2px;
+        background-color: cyan;
+        transition: width 0.3s;
+        color: red;
+    }
+    
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+    
+    .header-text {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .header-text h1 {
+        color: #00f7ff;
+        font-size: 40px;
+        margin: 0;
+    }
+    
+    .profile-image {
+        width: 200px;
+        height: 180px;
+        border-radius: 50%;
+        margin: 0;
+        margin-top: 20px;
+    }
+    
+    .header-text h3 {
+        color: red;
+        font-size: 38px;
+        margin: 0;
+    }
+    
+    .header-text p {
+        font-size: 25px;
+        margin-top: 0;
+        color: #00fff2;
+    }
+    
+    #scrollTopBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*----------Education-----------*/
+    
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .education-box,
+    .education-box-2,
+    .education-box-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+        gap: 30px;
+        border: 2px solid #000;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #000000;
+        max-width: 900px;
+        width: 90%;
+    }
+    
+    .education-image img {
+        width: 250px;
+        height: 200px;
+        margin-top: 10px;
+        border-radius: 50%;
+    }
+    
+    .education-text h2,
+    .education-text-2 h2,
+    .education-text-3 h2 {
+        margin-bottom: 10px;
+        font-size: 30px;
+        color: #00f7ff;
+    }
+    
+    .educ-text-1 {
+        font-size: 10px;
+    }
+    
+    .educ-text-1 p {
+        font-size: 20px;
+    }
+    /*-----training-----*/
+    
+    #Training {
+        color: #ffffff;
+        font-size: 25px;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #Training h2 {
+        color: #00f7ff;
+        margin: 0;
+    }
+    
+    #Training h3 {
+        margin-top: 20px;
+        color: red;
+    }
+    
+    #Training p {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+    .training-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .training-content {
+        display: flex;
+        gap: 30px;
+        border: 2px solid #000;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #000000;
+        max-width: 900px;
+        width: 90%;
+        align-items: center;
+    }
+    
+    .training-text {
+        flex: 1;
+    }
+    
+    .training-image img {
+        max-width: 450px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    /*-----Project-----*/
+    
+    .project-content {
+        display: flex;
+        gap: 30px;
+        border: 2px solid #000;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #000000;
+        max-width: 900px;
+        width: 90%;
+        align-items: center;
+    }
+    
+    .project-image img {
+        width: 430px;
+        height: 350;
+        border: 20px;
+        border-radius: 20px;
+    }
+    
+    .project-text h2 {
+        font-size: 40px;
+        color: #00f7ff;
+        margin: 0;
+    }
+    
+    .project-text h3 {
+        font-size: 25px;
+        color: yellowgreen;
+        margin: 0;
+    }
+    
+    .project-text p {
+        font-size: 17px;
+    }
+    /*-----CONTACT-----*/
+    
+    .contact-box {
+        padding: 50px;
+        background-color: #000000;
+        border-radius: 10px;
+        color: #00ddff;
+        font-size: 20px;
+        width: 350px;
+        height: 300px;
+        text-align: center;
+    }
+    
+    .contact-box h2 {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    
+    P {
+        margin: 20px;
+        color: white;
+    }
